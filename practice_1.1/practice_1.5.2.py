@@ -11,6 +11,7 @@
 value1 = int(input('Введите значения выручки: '))
 value2 = int(input('Введите значение издержек: '))
 value3 = value1 - value2 #прибыль
+
 if value1 > value2:
     print('выручка больше издержек')
     print(f'рентабельность выручки: {value3 / value1}')
