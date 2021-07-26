@@ -16,18 +16,18 @@ print((lambda p_1, p_2: p_1 ** p_2)(x, y))
 4.2. Второй — более сложная реализация без оператора **, предусматривающая использование цикла.
 '''
 
-def my_func(x,y):
+def my_func(x, y):
     #  x - число
     #  y - степень
-    #i текущая степень
+    # i текущая степень
     if int(y) > 0:
         i = 1
         result = 1
-        while i <=y:
+        while i <= y:
             # print(f'текущий счетчик степени {i} <= {y} введенной степень')
             # print(f'result = {result} * {x}')
-            result *=x
-            i+=1
+            result *= x
+            i += 1
             # print(f'увеличиваем счетчик i + {1}')
             # print(f'result = {result}')
             # print(f'цикл {i}, {i} <= {y}?')
@@ -36,7 +36,7 @@ def my_func(x,y):
         i = 0
         result = 1
         while i > y:
-            # print(f'текущий счетчик степени {i} > {y} введенной степени') 
+            # print(f'текущий счетчик степени {i} > {y} введенной степени')
             # print(f'result = {result} / {x}')
             result /= x
             i -= 1
@@ -44,5 +44,6 @@ def my_func(x,y):
             # print(f'result = {result}')
             # print(f'цикл {i}, {i} > {y}?')
         print(f'Ответ: {x}^{y}={result}')
-        
-my_func(x=int(input('Введите чсило: ')),y=int(input('Введите степень: '))
+
+
+my_func(x=int(input('Введите чсило: ')), y=int(input('Введите степень: ')))
