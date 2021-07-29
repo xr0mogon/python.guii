@@ -4,7 +4,7 @@
 # Подсказка: использовать функцию reduce().
 from functools import reduce
 
-my_list = range(99, 1001)
+my_list = range(100, 1001)
 out_list = [number for number in my_list[1:] if number % 2 == 0]
 
 
