@@ -5,7 +5,7 @@
 from functools import reduce
 
 my_list = range(100, 1001)
-out_list = [number for number in my_list[1:] if number % 2 == 0]
+out_list = [number for number in my_list[:] if number % 2 == 0]
 
 
 def reducer_func(el_prev, el):  # el_prev — предшествующий элемент # el — текущий элемент
