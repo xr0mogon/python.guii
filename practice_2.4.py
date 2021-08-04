@@ -5,14 +5,10 @@
 
 my_str = input("Введите несколько слов: ").split(' ')
 word = ''
-n = 1
 print(my_str)
 
-for word in my_str:
-    if len(word) >= 10:  # Если слово длинное, выводить только первые 10 букв в слове.
-        print(f'{n}.{word[0:10]}')
-        n += 1
+for index, word in enumerate(my_str):
+    if len(word) >= 10: # Если слово длинное, выводить только первые 10 букв в слове.
+        print(f'{index}.{word[0:10]}')
     else:
-        print(f'{n}.{word}')
-        n += 1
-        
+        print(f'{index}.{word}')    
