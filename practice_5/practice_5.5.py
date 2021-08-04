@@ -11,8 +11,9 @@ f_obj.close()
 
 with open('practice_5.5.txt', 'rt', encoding='utf-8') as f_obj:
     sum = 0
-    list_obj = f_obj.readlines()
-    list_obj = list_obj[0].split()
+    list_obj = f_obj.readline()
+    list_obj = list_obj.split()
     for data in list_obj:
         sum += int(data)
     print('Сумма чисел из файла =', sum)
+    
