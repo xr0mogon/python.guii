@@ -14,7 +14,7 @@ f = open(f_name, 'w')
 print(f'{f.name}')
 while True:
     s = input('Нажмите "Enter" для выхода из записи или введите текст: ')
-    if s == '': break
+    if not s: break
     f.write(s + '\n')
 f.close()
 print(f'Запись закрыта? {f.closed}')
